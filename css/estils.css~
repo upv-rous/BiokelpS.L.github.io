@@ -1,0 +1,320 @@
+body{ 
+background: url(../images/fondo/fondo1.jpg); 
+background-position:center; 
+font-family:futura, trajan, sans-serif; 
+}
+header { 
+width:960px; /* amplària del header (en píxels) */
+margin:auto; /* gestió automàtica dels màrgens */
+margin-top:20px; /* marge superior del header = 20 píxels */
+height:110px; /* altura del header (en píxels) */
+background: #FFF; /* color de fons del header. #FFF és el color blanc */
+border-radius:20px; /* Vora de 20 px – Navegador Internet Explorer */
+-moz-border-radius:20px; /* Vora de 20 px – Mozilla Firefox */
+-webkit-border-radius:20px; /* Vora de 20 px – Navegador Safari */
+box-shadow:10px 10px 7px #000; /* Ombra per a Internet Explorer */
+-moz-box-shadow:10px 10px 7px #000; /* Ombra per a Mozilla Firefox */
+-webkit-box-shadow:10px 10px 7px #000; /* Ombra per a Safari*/
+}
+#main{ 
+width:960px; 
+height:360px; 
+margin:auto; 
+margin-top:30px; 
+background-color:#FFF;
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+box-shadow:10px 10px 7px #000; 
+-moz-box-shadow:10px 10px 7px #000; 
+-webkit-box-shadow:10px 10px 7px #000
+} 
+footer { 
+width:960px; 
+height:80px; 
+margin:auto; 
+margin-top:30px; 
+background:#FFF; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+box-shadow:10px 10px 7px #000; 
+-moz-box-shadow:10px 10px 7px #000; 
+-webkit-box-shadow:10px 10px 7px #000;
+}
+#subheader { 
+width:960px; /* amplària de 960 píxels */ 
+margin:auto; /* margens automàtics */ 
+} 
+#logotipo { 
+float:left; /* alineació a l'esquerra */ 
+margin:auto; /* inicialitzem els margens automàticament */ 
+margin-left:35px; /* marge esquerre de 25 píxels */ 
+width:60px; /* amplària de 80 píxels */ 
+height:60px; /* alçària de 80 píxels */ 
+}
+
+header #subheader nav{ 
+float:right; /* alineació del menú a la dreta */
+margin:auto; /* màrgens automàtics */
+margin-right:30px; /* marge dret de 30 píxels */
+border-bottom: 5px solid #3BEFDB; /* vora inferior del menú (línia de 5 píxels de 
+ grossor, continua i de color rosa */
+}
+a{ /* la etiqueta "a" fa referència als enllços web */
+text-decoration: none; /* quan aparega un enllaç, no apareixerà de blau, ni subratllat*/
+color: #000; /* color de lletra: negre */
+} 
+a:hover { /* aquesta part s'activa quan passem el ratolí per damunt de qualsevol enllaç web*/
+text-decoration: underline; /* quan pasem el ratolí, l'enllaç apareixerà subratllat*/
+}
+
+header #subheader nav ul{ /*Propietat que s'aplica a la llista del menú */
+margin:0; /* sense marges externs */ 
+padding:0; /*sense marges interns */
+} 
+header #subheader nav ul li{ /*Propietat que s'aplica a cada element de la llista del menú */
+position: relative; /* Inicialitzem la posició */
+display: inline; /* Per a mostrar cada element, un a continuació de l'altre */
+float: left; /* Alineat a l'esquerra */
+font-family: Arial, Helvetica, Sans-serif; /*Tipus de lletra */
+} 
+header #subheader nav ul li a{ /* Propietat que s'aplica als enllaços dels elements del menú */
+display: block; /* L'enllaç de cada element queda fixe */
+position: relative; /* Inicialitzem la posició */
+padding-top: 65px; /* marge intern superior */
+padding-right: 10px; /* marge intern dret */
+padding-bottom: 0px; /* marge intern inferior */
+padding-left: 10px; /* marge intern esquerre */
+margin: 0px 1px 0 0; /* marge extern: superior (0) dret (1) inferior (0) esquerre (0) */
+font-size: 14px; /* tamany de lletra */
+color: #000; /* color negre */
+font-weight: bold; /* lletra negreta */
+text-align: center; /* alineació centrada */
+text-decoration: none; /* els enllaços deixen de ser blaus i subratllats */
+border: none; /* sense vores*/
+} 
+header #subheader nav ul li a:hover, header #subheader nav ul li a.selected{ 
+/* Aquesta propietat s'activa quan passem el ratolí per damunt o seleccionem un element del menú */
+color: #fff; /* color negre */
+font-weight: bold; /* lletra negreta */
+background: #189932; /* el fons de l'element apareix en color burdeos */
+text-decoration: none; /* els enllaços deixen de ser blaus i subratllats */
+}
+#slideshow{ /* definim un visor de fotos amb aquestes propietats */
+margin:0px 0px 0px 0px; /* Inicialitzem els margens */
+position:relative; /*inicialitzem la posició */
+width:570px; /* amplària del visor */
+height:350px; /* altura del visor */
+padding:10px; /* tots els margens interns a 10 píxels */
+border-radius:20px; /* les vores del visor redondejades, per a cada navegador */
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+float:left; /* alineació a l'esquerra */
+margin-bottom:10px;*/ /* marge inferior de 10 píxels */
+} 
+#slideshow > div { /* Per cada secció que continga una foto .... */
+position:absolute; /* la posició serà absoluta en la pantalla */
+top:28px; /* Inici de la posició en les coordenades (30,28) */
+left:30px; 
+right:0px; 
+bottom:0px; 
+} 
+#slideshow img{ /* Per cada imatge .... li posa les següents dimensions i, */
+width:560px; /* a més, aquestes imatges les fa amb la vora redondejada */
+height:300px; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+} 
+#TextoBienvenidos{
+width: 310px; 
+height: 303px;
+position:relative; /* inicialitzm la posicio */
+color:#000; /* color del text: negre */
+padding-top:2px; /* margens interns */
+padding-left:0px;
+padding-right:10px;
+padding-bottom:0px;
+background:#fff; /* color de fons: blanc */
+margin:12px 605px; /* marge superior de 12 i esquerra de 605 */
+}
+#TextAulaInformatica{
+font-family: Arial, Helvetica, sans-serif; /* estil de text */
+color:#189932 ; /* color del text */
+font-size:20px; /* tamany del text */
+font-weight:bold; /* en negreta */
+border-bottom:10px solid #3BEFDB; /* subratllat del color indicat */
+}
+#TextIntroduccio{
+text-align: justify; /* text justificat */
+font-family: Arial, Helvetica, sans-serif; 
+}
+
+.copyright{ 
+ text-align:center; 
+ color: #189932; 
+}
+#final{
+padding-top:20px;
+}
+
+#TitolElement1{
+width:280px;
+height: 40px;
+margin-left:30px;
+margin-top:5px;
+border-bottom: 10px solid #3BEFDB;
+float:left;
+}
+
+
+.LlistaServicis{
+position:relative;
+margin: 0px 0px 5px 5px;
+padding-left: 30px;
+padding-right: 10px;
+list-style: round;
+ line-height:20px;
+ font-size: 13px;
+}
+
+
+.fila {
+ display: table-row;
+}
+#Columna1 {
+ display: table;
+margin-top:0px;
+width:180px;
+height: 10px;
+ float:left; 
+}
+#Columna2 {
+ display: table;
+ width:180px;
+height: 10px;
+margin-top:0px;
+float:left; 
+}
+#Columna3 {
+ display: table;
+ width:180px;
+height: 30px;
+margin-top:0px;
+ float:left; 
+}
+
+#ImatgeServicis {
+ display: table;
+ width:180px;
+height: 30px;
+margin-left:30px;
+margin-top:0px;
+ float:left; 
+}
+#ImatgeServicis img{
+width:280px;
+height:140px; 
+} 
+
+#dadesContacte{ 
+margin-left:30px; /*marge esquerre */
+width:260px; /* amplària */
+height:305px; /* alçària */
+margin-top:30px; /*marge superior */
+margin-right:10px; /* marge dret */
+float:left; /* alineació a l'esquerra */
+ border-radius:20px; /*vora redona */
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+ box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*vora sombrejada *//*IE*/ 
+-moz-box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*Firefox*/ 
+-webkit-box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*Safari*/ 
+background:#706f9d; /*color de fons */
+} 
+#contacte{ 
+margin-left:30px; 
+width:600px; 
+height:305px; 
+margin-top:30px; 
+margin-right:30px; 
+float:right; /* alineació a la dreta */
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*IE*/ 
+-moz-box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*Firefox*/ 
+ -webkit-box-shadow:0px 0px 20px rgba(0,0,0,0.9); /*Safari*/ 
+} 
+
+#contacte iframe{
+height: 305px; /*Per a que el mapa no siga més gran que la caixa que el conté */
+border-radius:20px; /*Per a fer-li la vora redona al mapa */
+-moz-border-radius:20px;
+-webkit-border-radius:20px;
+}
+
+#dadesContacte a{ /*Per a que l'enllaç de correu electrònic siga blanc */
+color:#fff; 
+}
+#telefono{ 
+margin-top:30px; 
+width:260px; 
+height:45px; 
+float:left; 
+background:#3BEFDB; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+} 
+#email{ 
+width:260px; 
+height:45px; 
+float:left; 
+background:#189932; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+} 
+#fax{ 
+width:260px; 
+height:45px; 
+float:left; 
+background:#189932; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+} 
+#direccion{ 
+width:260px; 
+height:45px; 
+float:left; 
+background:#189932; 
+border-radius:20px; 
+-moz-border-radius:20px; 
+-webkit-border-radius:20px; 
+} 
+.textoTelLogo{ 
+text-align: center; 
+margin-top:18px; 
+font-size: 13px; 
+color:#fff; 
+font-weight:bold; 
+} 
+.textoTelefono{ 
+text-align: center; 
+line-height:15px; 
+margin-top:10px; 
+font-size: 13px; 
+color:#fff; 
+font-weight:bold; 
+}
+.textoEmail{ 
+text-align: center; 
+line-height:24px; 
+margin-top:17px; 
+font-size: 13px; 
+color:#fff; 
+font-weight:bold; 
+}

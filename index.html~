@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta name="description" content="Pagina web oficial de la empresa Biokelp S.L."> 
+<meta name="keywords" content="Biokelp, algas, materiales"> 
+<link rel="stylesheet" type="text/css" href="css/estils.css"/> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script> 
+$(function(){ 
+$("#slideshow >div:gt(0)").hide(); 
+setInterval(function() { 
+$('#slideshow > div:first') 
+	.fadeOut(1000) 
+	.next() 
+	.fadeIn(1000) 
+	.end() 
+	.appendTo('#slideshow'); 
+ }, 4000); 
+}); 
+ </script>
+<title> Biokelp S.L. </title>
+</head>
+<body>
+<header>
+<div id="subheader"> 
+ <div id="logotipo"><p><img src='images/logo2.jpg' alt='logotipo'></p></div> 
+ <nav> 
+ <ul> 
+ <li><a href="index.html" class="selected">Inicio</a></li> 
+ <li><a href="productos.html">Productos</a></li> 
+ <li><a href="donde-estamos.html">Contacto</a></li> 
+</ul> 
+ </nav>
+ </div>
+</header>
+<section id="main">
+<section id="slideshow"> 
+ <div><a href="#"><img src="images/1.jpg"/></a></div> 
+ <div><a href="#"><img src="images/2.jpg"/></a></div> 
+<div><a href="#"><img src="images/3.jpg"/></a></div> 
+<div><a href="#"><img src="images/4.jpg"/></a></div> 
+ </section> 
+ <section id="TextoBienvenidos">
+ <p id="TextAulaInformatica">Biokelp S.L.</p>
+ <p id="TextIntroduccio">Biokelp S.L. es una empresa proveedora de materiales
+ de construcción, cuyo proyecto principal es crear un nuevo tipo de ladrillos 
+ fabricados a base de algas que mejoren la eficiencia y la sostenibilidad del 
+ mundo de la construcción.</p>
+ 
+ <p>La materia prima de nuestro producto son las algas. Tienen excelentes cualidades que 
+ permiten una reducción de la huella de carbono, tanto en producción como en utilización.
+ </p>
+ </section>
+</section>
+<footer>
+<section id="final"> 
+ <p class="copyright">Copyright 2022 | Biokelp S.L.</p>
+<p class="copyright"></p> 
+ </section> 
+</footer>
+</body>
+</html>
